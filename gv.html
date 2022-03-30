@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Rides</title>
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top,rgba(0,0,0,0.3)50%,rgba(0,0,0,0.3)50%),url(https://i.pinimg.com/originals/81/e8/16/81e816653124c3df4a8eef7fdb128fd3.jpg);
+    background-size: cover;
+
+}
+nav{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    transition: background 1s;
+    
+}
+nav .logo h2{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: crimson;
+    
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+nav:hover{
+    background: white;
+    
+}
+nav:hover ul li a{
+    color: crimson;
+}
+.one{
+    width: 270px;
+    height: 400px;
+    background: linear-gradient(to top ,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%);
+    margin-top:90px;
+    margin-left: 1000px;
+    border-radius: 10px;
+    padding: 25px;
+    position: absolute;
+    transition: 1s ease;
+}
+.one h2{
+    width: 200px;
+    text-align: center;
+    font-size: 22px;
+    color: crimson;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}  
+.one input{
+    width: 220px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid crimson;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 25px;
+    letter-spacing: 1px;
+    
+}
+.one input:focus{
+    outline: none;
+}
+::placeholder{
+    color: white;
+}
+.b1{
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    border: none;
+    background: crimson;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.4s ease;
+}
+.b1:hover{
+    background: white;
+}
+.b1 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.one .pra{
+    font-size: 17px;
+    padding-top:30px;
+    text-align: center;
+    color: white;
+}
+
+.one .pra a{
+    text-decoration: none;
+    color: crimson;
+    font-weight: bold;
+}
+.one:hover{
+    background: white;
+}
+.one:hover h3{
+    color:black;
+}
+.one:hover ::placeholder{
+    color: crimson;
+}
+.vi{
+    width: 500px;
+    height: 250px;
+    margin-left: 140px;
+    margin-top: 100px
+}
+.one:hover .b1{
+     width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    border: none;
+    background: crimson;
+    cursor: pointer;
+    text-align: center;
+}
+
+.one:hover .b1:hover{
+    background: gray;
+}
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <nav>
+                <div class="logo">
+                    <h2><b>GV RIDES</b></h2>
+                </div>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                     <li><a href="#">CONTACT</a></li>
+                     <li><a href="#">HELP</a></li>
+                </ul>
+            </nav>
+            <div class="one">
+                <h2><b>Login Here</b></h2>
+                <input type="email" name="email" placeholder="Enter Mail Here">
+                <input type="password" name="" placeholder="Enter Password Here">
+                <button class="b1"><a href="#">Login</a></button>
+                <h3 class="pra">New User <a href="#"> Register </a> here</h3>
+            </div>
+            <div class="vi">
+                <h1>Let's Ready to Ride</h1>
+                <p class="pa">Riding is an awesome feeling</p>
+            </div>
+        </div>
+    </body>
+</html>
